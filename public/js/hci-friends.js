@@ -44,3 +44,10 @@ function anagrammedName(name) {
 		return name;
 	}
 }
+
+for(var i = 0; i < 6; i++) {
+	$(".friendName")[i].addEventListener("click",function(event){
+	  $(this).innerHTML = anagrammedName($(this).text());
+	  event.preventDefault();
+	});
+}
